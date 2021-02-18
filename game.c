@@ -74,8 +74,8 @@ void computer(char board[cross][vertical], int cro, int ver)
 	printf("电脑走\n");
 	while (1)
 	{
-		int i = rand() % 3;
-		int j = rand() % 3;
+		int i = rand() % cross;
+		int j = rand() % vertical;
 		if (board[i][j] == ' ')
 		{
 			board[i][j] = '#';
